@@ -1,10 +1,10 @@
 import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
 import 'package:e_commerce/core/widgets/space_widget.dart';
-import 'package:e_commerce/features/users/end_user/home/presentation/product/favourites_product_page.dart';
+import 'package:e_commerce/features/users/end_user/home/presentation/product/pages/favourites_product_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import '../../features/users/end_user/home/presentation/product/product_view_page.dart';
+import '../../features/users/end_user/home/presentation/product/pages/product_view_page.dart';
 import '../utils/size_config.dart';
 
 class HorizontalScroll extends StatefulWidget {

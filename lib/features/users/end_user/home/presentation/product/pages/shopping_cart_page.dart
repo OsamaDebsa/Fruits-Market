@@ -2,7 +2,7 @@ import 'package:e_commerce/core/widgets/custom_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
 
-import '../../../../../../core/utils/size_config.dart';
+import '../../../../../../../core/utils/size_config.dart';
 
 class ShoppingCartPage extends StatefulWidget {
   static List<ItemModel> cartItems = [];

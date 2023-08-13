@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../../../core/widgets/item_model.dart';
-import '../product/search_products.dart';
+import '../product/widgets/search_products.dart';
 
 class CustomAppBar extends StatelessWidget {
   final List<ItemModel> products;

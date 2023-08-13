@@ -1,7 +1,7 @@
 import 'package:e_commerce/core/utils/constants.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../core/widgets/item_model.dart';
-import 'product_view_page.dart';
+import '../../../../../../../core/widgets/item_model.dart';
+import '../pages/product_view_page.dart';
 
 class SearchPage extends StatefulWidget {
   final List<ItemModel> products;

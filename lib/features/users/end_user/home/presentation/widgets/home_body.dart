@@ -1,13 +1,13 @@
 import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
 import 'package:flutter/material.dart';
-import '../vegetables/vegetables_tab.dart';
-import '../product/shopping_cart_page.dart';
+import '../tabs/vegetables_tab.dart';
+import '../product/pages/shopping_cart_page.dart';
 import '../../../../../../developed_by.dart';
 import '../../../../../auth/firebase/store_data.dart';
-import '../dry_fruits/dry_fruits_tab.dart';
-import '../fruits/fruits_tab.dart';
-import '../product/favourites_product_page.dart';
+import '../tabs/dry_fruits_tab.dart';
+import '../tabs/fruits_tab.dart';
+import '../product/pages/favourites_product_page.dart';
 import 'custom_appbar.dart';
 
 class HomePageBody extends StatefulWidget {

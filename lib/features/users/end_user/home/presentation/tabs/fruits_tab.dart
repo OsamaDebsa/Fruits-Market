@@ -5,7 +5,7 @@ import '../../../../../../../core/widgets/item_model.dart';
 import '../../../../../../core/utils/size_config.dart';
 import '../../../../../../core/widgets/custom_caption.dart';
 import '../../../../../../core/widgets/horizontal_scroll.dart';
-import '../product/get_list_of_products_by_description.dart';
+import '../product/functions/get_list_of_products_by_description.dart';
 
 class FruitsTab extends StatelessWidget {
   final List<ItemModel> products;

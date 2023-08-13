@@ -1,12 +1,12 @@
 import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/custom_buttons.dart';
 import 'package:e_commerce/core/widgets/space_widget.dart';
-import 'package:e_commerce/features/users/end_user/home/presentation/product/shopping_cart_page.dart';
+import 'package:e_commerce/features/users/end_user/home/presentation/product/pages/shopping_cart_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-import '../../../../../../core/utils/size_config.dart';
-import '../../../../../../core/widgets/item_model.dart';
+import '../../../../../../../core/utils/size_config.dart';
+import '../../../../../../../core/widgets/item_model.dart';
 
 class ProductViewPage extends StatelessWidget {
   final ItemModel item;

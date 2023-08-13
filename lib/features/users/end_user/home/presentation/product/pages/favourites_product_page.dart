@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/size_config.dart';
-import '../../../../../../core/widgets/item_model.dart';
+import '../../../../../../../core/utils/size_config.dart';
+import '../../../../../../../core/widgets/item_model.dart';
 
 class FavouritesPage extends StatefulWidget {
   const FavouritesPage({super.key});

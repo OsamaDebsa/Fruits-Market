@@ -1,4 +1,4 @@
-import '../../../../../../core/widgets/item_model.dart';
+import '../../../../../../../core/widgets/item_model.dart';
 
 List<ItemModel> getListByDescription(
     List<ItemModel> products, String description) {
