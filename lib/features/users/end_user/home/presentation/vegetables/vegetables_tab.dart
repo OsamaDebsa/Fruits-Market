@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'core/constants.dart';
-import 'core/utils/size_config.dart';
-import 'core/widgets/custom_caption.dart';
-import 'core/widgets/horizontal_scroll.dart';
-import 'core/widgets/item_model.dart';
-import 'core/widgets/space_widget.dart';
-import 'features/users/end_user/home/presentation/product/get_list_of_products_by_description.dart';
+import '../../../../../../core/utils/constants.dart';
+import '../../../../../../core/utils/size_config.dart';
+import '../../../../../../core/widgets/custom_caption.dart';
+import '../../../../../../core/widgets/horizontal_scroll.dart';
+import '../../../../../../core/widgets/item_model.dart';
+import '../../../../../../core/widgets/space_widget.dart';
+import '../product/get_list_of_products_by_description.dart';
 
 class VegetablesTab extends StatelessWidget {
   final List<ItemModel> products;
@@ -15,13 +15,13 @@ class VegetablesTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<ItemModel> mixedVegetablesPack =
-        getListByDescription(products, KMixedVegetablesPack);
+        getListByDescription(products, kMixedVegetablesPack);
     List<ItemModel> organicVegetables =
-        getListByDescription(products, KOrganicVegetables);
+        getListByDescription(products, kOrganicVegetables);
     List<ItemModel> alliumVegetables =
-        getListByDescription(products, KAlliumVegetabels);
+        getListByDescription(products, kAlliumVegetabels);
     List<ItemModel> rootVegetables =
-        getListByDescription(products, KRootVegetabels);
+        getListByDescription(products, kRootVegetabels);
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -34,7 +34,7 @@ class VegetablesTab extends StatelessWidget {
             ),
             Container(
               height: SizeConfig.defultSize! * 26,
-              color: KWC,
+              color: kwc,
               child: ListView.builder(
                 shrinkWrap: true,
                 itemBuilder: (context, index) =>
@@ -51,7 +51,7 @@ class VegetablesTab extends StatelessWidget {
             ),
             Container(
               height: SizeConfig.defultSize! * 26,
-              color: KWC,
+              color: kwc,
               child: ListView.builder(
                 shrinkWrap: true,
                 itemBuilder: (context, index) =>
@@ -68,7 +68,7 @@ class VegetablesTab extends StatelessWidget {
             ),
             Container(
               height: SizeConfig.defultSize! * 26,
-              color: KWC,
+              color: kwc,
               child: ListView.builder(
                 shrinkWrap: true,
                 itemBuilder: (context, index) =>
@@ -85,7 +85,7 @@ class VegetablesTab extends StatelessWidget {
             ),
             Container(
               height: SizeConfig.defultSize! * 26,
-              color: KWC,
+              color: kwc,
               child: ListView.builder(
                 shrinkWrap: true,
                 itemBuilder: (context, index) =>

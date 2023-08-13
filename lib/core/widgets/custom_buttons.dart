@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/utils/size_config.dart';
 import 'package:e_commerce/core/widgets/space_widget.dart';
 import 'package:flutter/material.dart';
@@ -18,12 +18,12 @@ class CustomGeneralButton extends StatelessWidget {
             width: SizeConfig.screenWidth,
             height: 60,
             decoration: BoxDecoration(
-                color: KMC, borderRadius: BorderRadius.circular(8)),
+                color: kmc, borderRadius: BorderRadius.circular(8)),
             child: Center(
               child: Text(
                 buttonTitle!,
                 style: const TextStyle(
-                  color: KWC,
+                  color: kwc,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),

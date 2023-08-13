@@ -1,6 +1,6 @@
 import 'package:e_commerce/core/widgets/space_widget.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../../core/constants.dart';
+import '../../../../../../core/utils/constants.dart';
 import '../../../../../../../core/widgets/item_model.dart';
 import '../../../../../../core/utils/size_config.dart';
 import '../../../../../../core/widgets/custom_caption.dart';
@@ -15,11 +15,11 @@ class FruitsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<ItemModel> mixedFruitPack =
-        getListByDescription(products, KMixedFruitPack);
+        getListByDescription(products, kMixedFruitPack);
     List<ItemModel> organicFruits =
-        getListByDescription(products, KOrganicFruits);
-    List<ItemModel> stoneFruits = getListByDescription(products, KStoneFruits);
-    List<ItemModel> melons = getListByDescription(products, KMelons);
+        getListByDescription(products, kOrganicFruits);
+    List<ItemModel> stoneFruits = getListByDescription(products, kStoneFruits);
+    List<ItemModel> melons = getListByDescription(products, kMelons);
 
     return SingleChildScrollView(
       child: Column(
@@ -31,7 +31,7 @@ class FruitsTab extends StatelessWidget {
           ),
           Container(
             height: SizeConfig.defultSize! * 26,
-            color: KWC,
+            color: kwc,
             child: ListView.builder(
               shrinkWrap: true,
               itemBuilder: (context, index) =>
@@ -48,7 +48,7 @@ class FruitsTab extends StatelessWidget {
           ),
           Container(
             height: SizeConfig.defultSize! * 26,
-            color: KWC,
+            color: kwc,
             child: ListView.builder(
               shrinkWrap: true,
               itemBuilder: (context, index) =>
@@ -65,7 +65,7 @@ class FruitsTab extends StatelessWidget {
           ),
           Container(
             height: SizeConfig.defultSize! * 26,
-            color: KWC,
+            color: kwc,
             child: ListView.builder(
               shrinkWrap: true,
               itemBuilder: (context, index) =>
@@ -82,7 +82,7 @@ class FruitsTab extends StatelessWidget {
           ),
           Container(
             height: SizeConfig.defultSize! * 26,
-            color: KWC,
+            color: kwc,
             child: ListView.builder(
               shrinkWrap: true,
               itemBuilder: (context, index) =>

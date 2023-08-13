@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/custom_buttons.dart';
 import 'package:e_commerce/core/widgets/custom_textfield.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
@@ -114,7 +114,7 @@ void showSuccessMessage(BuildContext context) {
       return AlertDialog(
         title: const Text('Success'),
         content: const Text('Product added successfully!'),
-        backgroundColor: KMC,
+        backgroundColor: kmc,
         actions: [
           TextButton(
             onPressed: () {
@@ -122,7 +122,7 @@ void showSuccessMessage(BuildContext context) {
             },
             child: const Text('OK',
                 style: TextStyle(
-                  color: KWC,
+                  color: kwc,
                   fontWeight: FontWeight.bold,
                 )),
           ),

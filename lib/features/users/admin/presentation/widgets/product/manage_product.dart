@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -26,12 +26,12 @@ class _ManageProductState extends State<ManageProduct> {
             for (var doc in snapshot.data!.docs) {
               var data = doc.data() as Map<String, dynamic>;
               products.add(ItemModel(
-                name: data[KProductName],
-                description: data[KProductDescription],
-                imagePath: data[KProductLocation],
-                price: data[KProductPrice],
-                category: data[KProductCategory],
-                star: data[KProductStar].toDouble(),
+                name: data[kProductName],
+                description: data[kProductDescription],
+                imagePath: data[kProductLocation],
+                price: data[kProductPrice],
+                category: data[kProductCategory],
+                star: data[kProductStar].toDouble(),
                 ProductID: doc.id,
               ));
             }
@@ -93,7 +93,7 @@ class _ManageProductState extends State<ManageProduct> {
                         child: Opacity(
                           opacity: .6,
                           child: Container(
-                            color: KWC,
+                            color: kwc,
                             height: 60,
                             width: MediaQuery.of(context).size.width,
                             child: Padding(

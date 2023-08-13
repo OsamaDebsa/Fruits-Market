@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFiled extends StatelessWidget {
@@ -23,21 +23,21 @@ class CustomTextFiled extends StatelessWidget {
           }
           return null; // Return null if the value is valid
         },
-        cursorColor: KMC,
+        cursorColor: kmc,
         decoration: InputDecoration(
           hintText: hint,
           hintStyle: const TextStyle(
-            color: KMC,
+            color: kmc,
             fontWeight: FontWeight.bold,
           ),
-          fillColor: KWC,
+          fillColor: kwc,
           filled: true,
           enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: KMC),
+            borderSide: const BorderSide(color: kmc),
             borderRadius: BorderRadius.circular(20),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: KMC),
+            borderSide: const BorderSide(color: kmc),
             borderRadius: BorderRadius.circular(33),
           ),
           // border: OutlineInputBorder(

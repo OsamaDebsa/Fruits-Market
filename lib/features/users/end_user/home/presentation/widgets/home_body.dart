@@ -1,7 +1,7 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../vegetables_tab.dart';
+import '../vegetables/vegetables_tab.dart';
 import '../product/shopping_cart_page.dart';
 import '../../../../../../developed_by.dart';
 import '../../../../../auth/firebase/store_data.dart';
@@ -35,7 +35,7 @@ class _HomePageBodyState extends State<HomePageBody> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: KWC,
+          backgroundColor: kwc,
           toolbarHeight: 140,
           flexibleSpace: CustomAppBar(products: _products),
           elevation: 0,
@@ -78,12 +78,12 @@ class _HomePageBodyState extends State<HomePageBody> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          fixedColor: KMC,
-          backgroundColor: KWC,
+          fixedColor: kmc,
+          backgroundColor: kwc,
           elevation: 0,
           showSelectedLabels: true,
           showUnselectedLabels: true,
-          unselectedItemColor: KGC,
+          unselectedItemColor: kgc,
           currentIndex: currentIndex,
           unselectedLabelStyle: const TextStyle(
             fontWeight: FontWeight.bold,
@@ -104,12 +104,12 @@ class _HomePageBodyState extends State<HomePageBody> {
               icon: Icon(
                 Icons.home_outlined,
                 size: 36,
-                color: KGC,
+                color: kgc,
               ),
               activeIcon: Icon(
                 Icons.home_outlined,
                 size: 40,
-                color: KMC,
+                color: kmc,
               ),
               label: "Home",
             ),
@@ -117,12 +117,12 @@ class _HomePageBodyState extends State<HomePageBody> {
               icon: Icon(
                 Icons.shopping_cart_outlined,
                 size: 36,
-                color: KGC,
+                color: kgc,
               ),
               activeIcon: Icon(
                 Icons.shopping_cart_outlined,
                 size: 40,
-                color: KMC,
+                color: kmc,
               ),
               label: "Shopping cart",
             ),
@@ -130,12 +130,12 @@ class _HomePageBodyState extends State<HomePageBody> {
               icon: Icon(
                 Icons.favorite_border_rounded,
                 size: 36,
-                color: KGC,
+                color: kgc,
               ),
               activeIcon: Icon(
                 Icons.favorite_border_rounded,
                 size: 40,
-                color: KMC,
+                color: kmc,
               ),
               label: "Favourite",
             ),
@@ -143,12 +143,12 @@ class _HomePageBodyState extends State<HomePageBody> {
               icon: Icon(
                 Icons.person_outline_sharp,
                 size: 36,
-                color: KGC,
+                color: kgc,
               ),
               activeIcon: Icon(
                 Icons.person_outline_sharp,
                 size: 40,
-                color: KMC,
+                color: kmc,
               ),
               label: "Developed By",
             ),
@@ -165,12 +165,12 @@ class _HomePageBodyState extends State<HomePageBody> {
         for (var doc in snapshot.docs) {
           var data = doc.data() as Map<String, dynamic>;
           products.add(ItemModel(
-            name: data[KProductName],
-            description: data[KProductDescription],
-            imagePath: data[KProductLocation],
-            price: data[KProductPrice],
-            category: data[KProductCategory],
-            star: data[KProductStar].toDouble(),
+            name: data[kProductName],
+            description: data[kProductDescription],
+            imagePath: data[kProductLocation],
+            price: data[kProductPrice],
+            category: data[kProductCategory],
+            star: data[kProductStar].toDouble(),
           ));
         }
         setState(() {

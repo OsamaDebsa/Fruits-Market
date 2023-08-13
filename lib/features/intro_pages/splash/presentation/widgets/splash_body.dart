@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -43,7 +43,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      backgroundColor: KMC,
+      backgroundColor: kmc,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -53,7 +53,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
             child: const Text(
               'Fruit Market',
               style: TextStyle(
-                color: KWC,
+                color: kwc,
                 fontSize: 47,
                 fontWeight: FontWeight.bold,
               ),

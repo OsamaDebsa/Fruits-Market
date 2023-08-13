@@ -1,6 +1,6 @@
 import 'package:e_commerce/core/widgets/space_widget.dart';
 import 'package:flutter/material.dart';
-import 'core/constants.dart';
+import 'core/utils/constants.dart';
 
 class DeveloperPage extends StatelessWidget {
   const DeveloperPage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class DeveloperPage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.chevron_right_rounded,
-                color: KGC,
+                color: kgc,
               ),
               title: Text(
                 'Name',
@@ -38,7 +38,7 @@ class DeveloperPage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.chevron_right_rounded,
-                color: KGC,
+                color: kgc,
               ),
               title: Text(
                 'Phone',
@@ -53,7 +53,7 @@ class DeveloperPage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.chevron_right_rounded,
-                color: KGC,
+                color: kgc,
               ),
               title: Text(
                 'Email',

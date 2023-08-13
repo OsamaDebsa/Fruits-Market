@@ -5,7 +5,7 @@ import 'package:e_commerce/features/users/admin/presentation/widgets/product/man
 import 'package:e_commerce/features/users/end_user/home/presentation/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../core/constants.dart';
+import '../../../../../core/utils/constants.dart';
 
 class AdminPageBody extends StatelessWidget {
   const AdminPageBody({super.key});
@@ -14,11 +14,11 @@ class AdminPageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: KMC,
+          backgroundColor: kmc,
           title: const Text(
             "Admin",
             style: TextStyle(
-              color: KWC,
+              color: kwc,
               fontWeight: FontWeight.bold,
             ),
           )),

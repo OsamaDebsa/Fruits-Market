@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 import '../../../../../../core/widgets/item_model.dart';
 import 'product_view_page.dart';
@@ -44,7 +44,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: KMC,
+        backgroundColor: kmc,
         title: TextField(
           onChanged: (value) {
             setState(() {

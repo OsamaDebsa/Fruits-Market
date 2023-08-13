@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -37,27 +37,27 @@ class CustomTextFormField extends StatelessWidget {
           hintText: "Enter Your $labelTitle",
           border: const OutlineInputBorder(),
           focusedBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: KMC),
+            borderSide: BorderSide(color: kmc),
           ),
-          hintStyle: const TextStyle(color: KMC),
+          hintStyle: const TextStyle(color: kmc),
           prefixIcon: labelTitle == "Email"
               ? const Icon(
                   Icons.email,
-                  color: KMC,
+                  color: kmc,
                 )
               : const Icon(
                   Icons.lock,
-                  color: KMC,
+                  color: kmc,
                 ),
           suffixIcon: IconButton(
               onPressed: onTapIcon,
               icon: Icon(
                 suffixIconData,
-                color: KMC,
+                color: kmc,
               )),
           labelText: labelTitle,
           labelStyle: const TextStyle(
-            color: KMC,
+            color: kmc,
             fontWeight: FontWeight.bold,
           )),
     );

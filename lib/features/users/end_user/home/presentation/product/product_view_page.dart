@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/custom_buttons.dart';
 import 'package:e_commerce/core/widgets/space_widget.dart';
 import 'package:e_commerce/features/users/end_user/home/presentation/product/shopping_cart_page.dart';
@@ -17,7 +17,7 @@ class ProductViewPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("DETAILS"),
-        backgroundColor: KMC,
+        backgroundColor: kmc,
       ),
       body: Center(
         child: Padding(
@@ -53,7 +53,7 @@ class ProductViewPage extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.chevron_right_rounded,
-                    color: KGC,
+                    color: kgc,
                   ),
                   const HorizintalSpace(.2),
                   Text(
@@ -69,7 +69,7 @@ class ProductViewPage extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.chevron_right_rounded,
-                    color: KGC,
+                    color: kgc,
                   ),
                   const HorizintalSpace(.2),
                   Text(
@@ -85,7 +85,7 @@ class ProductViewPage extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.chevron_right_rounded,
-                    color: KGC,
+                    color: kgc,
                   ),
                   const HorizintalSpace(.2),
                   Text(
@@ -101,7 +101,7 @@ class ProductViewPage extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.chevron_right_rounded,
-                    color: KGC,
+                    color: kgc,
                   ),
                   Container(
                     child: Text(
@@ -142,7 +142,7 @@ class ProductViewPage extends StatelessWidget {
                   ShoppingCartPage.addToCart(item);
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      backgroundColor: KMC,
+                      backgroundColor: kmc,
                       content: Text('Item added to cart'),
                     ),
                   );

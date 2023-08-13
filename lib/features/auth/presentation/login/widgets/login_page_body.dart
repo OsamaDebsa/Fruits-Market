@@ -4,7 +4,7 @@ import 'package:e_commerce/features/auth/firebase/google_sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../core/constants.dart';
+import '../../../../../core/utils/constants.dart';
 import '../../../../../core/utils/size_config.dart';
 import '../../../../../core/widgets/space_widget.dart';
 import '../../../../users/admin/presentation/admin_page_view.dart';
@@ -38,7 +38,7 @@ class _LoginPageBodyState extends State<LoginPageBody> {
                   shrinkWrap: true,
                   children: [
                     Image.asset(
-                      KlogoImage,
+                      kLogoImage,
                       height: SizeConfig.defultSize! * 15,
                     ),
                     const VerticalSpace(1),
@@ -46,7 +46,7 @@ class _LoginPageBodyState extends State<LoginPageBody> {
                       child: Text(
                         'Fruit Market',
                         style: TextStyle(
-                          color: KMC,
+                          color: kmc,
                           fontSize: 47,
                           fontWeight: FontWeight.bold,
                         ),
@@ -127,7 +127,7 @@ class _LoginPageBodyState extends State<LoginPageBody> {
           Container(
             color: const Color.fromARGB(152, 0, 0, 0),
             child: const Center(
-              child: CircularProgressIndicator(color: KMC),
+              child: CircularProgressIndicator(color: kmc),
             ),
           ),
       ],

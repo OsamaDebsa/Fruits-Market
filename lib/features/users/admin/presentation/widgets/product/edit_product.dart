@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../../../core/constants.dart';
+import '../../../../../../core/utils/constants.dart';
 import '../../../../../../core/utils/size_config.dart';
 import '../../../../../../core/widgets/custom_buttons.dart';
 import '../../../../../../core/widgets/custom_textfield.dart';
@@ -77,11 +77,11 @@ class EditProduct extends StatelessWidget {
                       if (product != null) {
                         _store.editProduct(
                           {
-                            KProductName: _name,
-                            KProductLocation: _imagePath,
-                            KProductCategory: _category,
-                            KProductDescription: _description,
-                            KProductPrice: _price
+                            kProductName: _name,
+                            kProductLocation: _imagePath,
+                            kProductCategory: _category,
+                            kProductDescription: _description,
+                            kProductPrice: _price
                           },
                           product.ProductID,
                         );
@@ -106,7 +106,7 @@ class EditProduct extends StatelessWidget {
         return AlertDialog(
           title: const Text('Success'),
           content: const Text('Product edited successfully.'),
-          backgroundColor: KMC,
+          backgroundColor: kmc,
           actions: [
             TextButton(
               onPressed: () {
@@ -114,7 +114,7 @@ class EditProduct extends StatelessWidget {
               },
               child: const Text('OK',
                   style: TextStyle(
-                    color: KWC,
+                    color: kwc,
                     fontWeight: FontWeight.bold,
                   )),
             ),

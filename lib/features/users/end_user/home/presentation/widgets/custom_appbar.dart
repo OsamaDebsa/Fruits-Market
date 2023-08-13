@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Container(
-              color: KMC,
+              color: kmc,
               width: SizeConfig.screenWidth,
               height: 130,
               child: Row(
@@ -43,7 +43,7 @@ class CustomAppBar extends StatelessWidget {
                       icon: const Icon(
                         Icons.notifications,
                         size: 26,
-                        color: KWC,
+                        color: kwc,
                       ),
                       onPressed: () {},
                     ),
@@ -67,7 +67,7 @@ class CustomAppBar extends StatelessWidget {
                     height: 50,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(6)),
-                      color: KWC,
+                      color: kwc,
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5,

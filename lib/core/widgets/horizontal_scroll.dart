@@ -1,4 +1,4 @@
-import 'package:e_commerce/core/constants.dart';
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/item_model.dart';
 import 'package:e_commerce/core/widgets/space_widget.dart';
 import 'package:e_commerce/features/users/end_user/home/presentation/product/favourites_product_page.dart';
@@ -58,7 +58,7 @@ class _HorizontalScrollState extends State<HorizontalScroll> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: CircleAvatar(
-                        backgroundColor: KWC,
+                        backgroundColor: kwc,
                         child: IconButton(
                           onPressed: () {
                             setState(() {
